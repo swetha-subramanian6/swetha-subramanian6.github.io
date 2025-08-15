@@ -6,7 +6,7 @@ tags: [file-upload]
 toc: true
 ---
 
-## Introduction
+## File upload vulnerability
 
 Given how common file upload functions are — from updating profile pictures to sharing videos — almost every modern application uses them. But it’s not as simple as just accepting any file a user uploads.
 
