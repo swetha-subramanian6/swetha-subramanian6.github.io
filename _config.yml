@@ -29,9 +29,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share: true
+      share: false
       comments: false
-      toc: true
+      toc: false
       toc_sticky: true
   - scope:
       path: ""
