@@ -11,9 +11,6 @@ highlighter: rouge
 permalink: /:categories/:title/
 paginate: 5
 
-# Author info
-author:
-  name: "Swetha Subramanian"
 
 # Plugins
 plugins:
