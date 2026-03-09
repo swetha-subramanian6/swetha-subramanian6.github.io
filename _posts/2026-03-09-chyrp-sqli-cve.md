@@ -63,10 +63,9 @@ SELECT * FROM abc; DROP TABLE users; -- textpattern ORDER BY ID ASC;
 ```
 
 Depending on the database configuration and privileges.This could lead to:
-* destruction of database tables
-* unauthorized data access
-* denial of service
-
+* Database Manipulation: Attackers could modify or delete data.
+* Denial of service
+* Information Disclosure: attacker may access arbitrary tables in the database.
 
 ---
 
@@ -77,8 +76,8 @@ Depending on the database configuration and privileges.This could lead to:
 - Parameterized queries using prepared statements are the single most effective defense against SQL injection. This ensures user input is treated as data and never as sql code.
 
 ### Input Validation
-- Validate inputs against a strict allowlist — for example, if a prefix must be alphanumeric, enforce that with a regex check before it touches any query. Reject inputs that don't conform rather than trying to sanitize them.
-- Be especially careful with inputs that end up in structural parts of a query — table names, column names, ORDER BY clauses as these cannot be parameterized the same way values can.
+- Validate inputs against a strict allowlist. For example, if a prefix must be alphanumeric, enforce that with a regex check before it touches any query. Reject inputs that don't conform rather than trying to sanitize them.
+- Be especially careful with inputs that end up in structural parts of a query like: table names, column names, ORDER BY clauses as these cannot be parameterized the same way values can.
 
 ### Least Privilege Database Accounts
 - The application's database user should only have the permissions it genuinely needs typically SELECT, INSERT, UPDATE on specific tables.
@@ -86,7 +85,7 @@ Depending on the database configuration and privileges.This could lead to:
 
 ### Web Application Firewall (WAF)
 - A WAF can detect and block common SQL injection patterns as a defense-in-depth measure.
-- It is not a substitute for fixing the root cause — but it raises the bar for exploitation while a patch is being developed.
+- It will not fix the root cause but it raises the bar for exploitation while a patch is being developed.
 
 ---
 
