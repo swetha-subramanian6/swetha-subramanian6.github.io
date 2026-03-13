@@ -1,11 +1,23 @@
 ---
-title: "Authenticated SQL Injection in Chyrp CMS"
+title: "Authenticated SQL Injection in Chyrp CMS v2.5.2"
 date: 2026-03-09 12:00:00 +0530
 categories: [Web Security, CVE]
 tags: [sql-injection, chyrp-cms]
 toc: true
 ---
 
+## Vulnerability Summary
+ 
+| Field | Detail |
+|-------|--------|
+| **CVE ID** | CVE-2025-69768 |
+| **Affected Software** | Chyrp CMS v2.5.2 and before |
+| **Vulnerability Type** | SQL Injection |
+| **Component** | `Admin.php` (`prefix` POST parameter) |
+| **Access Required** | Authenticated (admin access) |
+| **Impact** | Information Disclosure, Data Manipulation, Denial of Service |
+
+---
 
 ## SQL Injection
 
