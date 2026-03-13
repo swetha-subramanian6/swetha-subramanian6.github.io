@@ -10,7 +10,6 @@ toc: true
  
 | Field | Detail |
 |-------|--------|
-| **CVE ID** | CVE-2025-69768 |
 | **Affected Software** | Chyrp CMS v2.5.2 and before |
 | **Vulnerability Type** | SQL Injection |
 | **Component** | `Admin.php` (`prefix` POST parameter) |
