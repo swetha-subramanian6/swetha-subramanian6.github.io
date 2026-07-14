@@ -1,10 +1,9 @@
 ---
----
-title: "Analyzing an Uncatchable Stack Overflow in `fulgur inspect`"
-date: 2026-07-14
-summary: >
-  A crafted PDF can trigger an unrecoverable stack overflow in
-  `fulgur inspect` through vulnerable versions of `lopdf`.
+title: "Uncatchable stack overflow (DoS) in fulgur"
+date: 2026-07-14 12:00:00 +0530
+categories: [ CVE]
+tags: [ fulgur]
+toc: true
 ---
 
 # Analyzing an Uncatchable Stack Overflow in `fulgur inspect`
